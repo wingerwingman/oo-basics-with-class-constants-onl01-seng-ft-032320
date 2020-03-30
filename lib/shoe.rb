@@ -10,7 +10,7 @@ class Shoe
   def brand=(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.each {|item| BRANDS << brand}
+    BRANDS.each {|i| i !== brand ? BRANDS << brand}
   end
 
   def cobble
