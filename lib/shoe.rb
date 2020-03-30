@@ -11,7 +11,7 @@ class Shoe
     @brand = brand
     BRANDS << brand
     BRANDS.each do |item|
-    if brand !== item
+    if brand != item
     BRANDS << brand
   end
   end
