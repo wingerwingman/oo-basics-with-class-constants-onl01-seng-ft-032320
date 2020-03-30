@@ -10,9 +10,10 @@ class Shoe
   def brand=(brand)
     @brand = brand
     BRANDS << brand
-    
-    if brand !== BRANDS
+    BRANDS.each do |item|
+    if brand !== item
     BRANDS << brand
+  end
   end
 
   def cobble
